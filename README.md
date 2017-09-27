@@ -12,3 +12,7 @@
 
 ## Exercícios
 * https://www.hackerrank.com/
+
+## Cheat Sheets
+* [Beginners Python Cheat Sheet PCC](cheatsheets/beginners_python_cheat_sheet_pcc_all.pdf)
+* [Memento Python3 English](cheatsheets/mementopython3-english.pdf)
