@@ -10,7 +10,7 @@
 ## Livros
 * https://penseallen.github.io/PensePython2e/
 
-## Exercícios
+## Exercícios & Desafios
 * https://www.hackerrank.com/
 
 ## Cheat Sheets
