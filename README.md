@@ -1,8 +1,10 @@
 # Estudos Python3
 
-## Sites
-* https://www.codecademy.com/learn
-* https://www.tutorialspoint.com/python3/index.htm
+## Cursos
+* [CodeAcademy](https://www.codecademy.com/learn)
+* [Tutorials Point](https://www.tutorialspoint.com/python3/index.htm)
+* [Python para Zumbis](https://www.pycursos.com/python-para-zumbis/)
+* [Diolinux Python para DevOps (R$49,90)](http://www.diostore.com.br/1b051a/curso-completo-de-python-para-devops)
 
 ## Youtube
 * [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ)
