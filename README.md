@@ -8,7 +8,7 @@
 * [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ)
 
 ## Livros
-* https://penseallen.github.io/PensePython2e/
+* [Pense Python 2e](https://penseallen.github.io/PensePython2e/) - livro open-source online
 
 ## Exercícios & Desafios
 * https://www.hackerrank.com/
