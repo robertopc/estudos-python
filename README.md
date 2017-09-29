@@ -11,6 +11,7 @@
 
 ## Livros
 * [Pense Python 2e](https://penseallen.github.io/PensePython2e/) - livro open-source online
+* [Make games with Python and Pygame](http://inventwithpython.com/pygame/)
 
 ## Exercícios & Desafios
 * https://www.hackerrank.com/
