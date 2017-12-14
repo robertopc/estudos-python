@@ -79,11 +79,11 @@ Para os retornos abaixo, iremos utilizar a ```str = 'roberto'```.
 método | chamada | retorno | descrição |
 --- | --- | --- | ---
 str.capitalize()   | | Roberto | deixa maiúscula a primeira vogal      |
-str.casefold()     |  | roberto | parecida com a lower(), porém é "mais agressiva"      |
-str.center(width[, fillchar]) | str.center(13, '.') | '...roberto...' | aumenta a string ao tamanho definido **width** e preenche com o caracter **fillchar** os espaços restantes. Se não for definido o **fillchar**, preenche com espaços.
-str.count(sub[, start[,end]]) | str.count('r') | 2 | conta a quantidade de vezes que a **sub** aparece na string
-str.encode(encoding='utf-8', errors='strict') | str.encode() | b'roberto' | codigica a string para um charset
-str.endswith(suffix[, start[, end]]) | str.endswith('rt') | False | verifica se a string termina com o **suffix**
+str.casefold()     |  | roberto | parecida com a lower() porém é "mais agressiva"      |
+str.center(width[, fillchar]) | str.center(13, '.') | '...roberto...' | retorna uma string com o tamanho definido em **width** e preenche com o caracter **fillchar** os espaços restantes. Se não for definido o **fillchar**, preenche com espaços.
+str.count(sub[, start[,end]]) | str.count('r') | 2 | conta a quantidade de vezes que **sub** aparece na str
+str.encode(encoding='utf-8', errors='strict') | str.encode() | b'roberto' | codifica a str para um charset
+str.endswith(suffix[, start[, end]]) | str.endswith('rt') | False | verifica se a str termina com o **suffix**
 str.expandtabs | chamada | retorno | desc
 str.find | chamada | retorno | desc
 str.format | chamada | retorno | desc
