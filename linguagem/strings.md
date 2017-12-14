@@ -78,8 +78,8 @@ Para os retornos abaixo, iremos utilizar a ```str = 'roberto'```.
 
 método | chamada | retorno | descrição |
 --- | --- | --- | ---
-str.capitalize()   | | Roberto | deixa maiúscula a primeira vogal      |
-str.casefold()     |  | roberto | parecida com a lower() porém é "mais agressiva"      |
+str.capitalize()   | str.capitalize() | Roberto | deixa maiúscula a primeira vogal      |
+str.casefold() | str.casefold() | roberto | parecida com a lower() porém é "mais agressiva"      |
 str.center(width[, fillchar]) | str.center(13, '.') | '...roberto...' | retorna uma string com o tamanho definido em **width** e preenche com o caracter **fillchar** os espaços restantes. Se não for definido o **fillchar**, preenche com espaços.
 str.count(sub[, start[,end]]) | str.count('r') | 2 | conta a quantidade de vezes que **sub** aparece na str
 str.encode(encoding='utf-8', errors='strict') | str.encode() | b'roberto' | codifica a str para um charset
