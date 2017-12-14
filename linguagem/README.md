@@ -1,3 +1,3 @@
-1. [Strings](linguagem/strings.md)
-1. [Números](linguagem/numeros.md)
-1. [Booleanos](linguagem/booleans.md)
+1. [Strings](strings.md)
+1. [Números](numeros.md)
+1. [Booleanos](booleans.md)
