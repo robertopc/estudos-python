@@ -71,10 +71,10 @@ Para concatenar strings usamos o operador ```+``` e para repetição o ```*```.
 'abcabcabc'
 ```
 
-Métodos de String
+Métodos
 ===
 
-Para os retornos abaixo, iremos utilizar a ```str = 'roberto'```.
+A string por ser um objeto, possui alguns métodos embutidos. Como mostrados na tabela a seguir. Para os retornos abaixo, iremos utilizar a ```str = 'roberto'```.
 
 método | chamada | retorno | descrição |
 --- | --- | --- | ---
