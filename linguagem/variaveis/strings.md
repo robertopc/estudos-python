@@ -120,49 +120,49 @@ Como mostrados a seguir.
 - [maketrans](#maketrans)
 - [translate](#translate)
 
-### <span name="lower"></a>str.lower() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.lower)
+### <a name="lower"></a>str.lower() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.lower)
 Converte toda string para minúsculo.
 ```python
 >>> 'lorem IPSUM DoLoR'.lower()
 'lorem ipsum dolor'
 ```
 
-### <span name="upper"></a>str.upper() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.upper)
+### <a name="upper"></a>str.upper() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.upper)
 Converte toda string para maiúsculo.
 ```python
 >>> 'lorem IPSUM DoLoR'.upper()
 'LOREM IPSUM DOLOR'
 ```
 
-### <span name="swapcase"></a>str.swapcase() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.swapcase)
+### <a name="swapcase"></a>str.swapcase() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.swapcase)
 Inverte minúsculo para maiúsculo e vice-versa.
 ```python
 >>> 'lorem IPSUM DoLoR'.swapcase()
 'LOREM ipsum dOlOr'
 ```
 
-### <span name="capitalize"></a>str.capitalize() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.capitalize)
+### <a name="capitalize"></a>str.capitalize() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.capitalize)
 Deixa maiúscula primeiro caractere e minúsculos os restantes.
 ```python
 >>> 'lorem IPSUM DoLoR'.capitalize()
 'Lorem ipsum dolor'
 ```
 
-### <span name="title"></a>str.title() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.title)
+### <a name="title"></a>str.title() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.title)
 Deixa maiúscula a primeira letra de cada palavra e minúsculos os restantes.
 ```python
 >>> 'lorem IPSUM DoLoR'.title()
 'Lorem Ipsum Dolor'
 ```
 
-### <span name="casefold"></a>str.casefold() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.casefold)
+### <a name="casefold"></a>str.casefold() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.casefold)
 Parecida com a lower() porém é "mais agressiva".
 ```python
 >>> 'lorem IPSUM DoLoR'.casefold()	
 'lorem ipsum dolor'
 ```
 
-### <span name="center"></a>str.center(width[, fillchar]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.center)
+### <a name="center"></a>str.center(width[, fillchar]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.center)
 Retorna uma string com o tamanho definido em _width_ e preenche com o caracter _fillchar_ os espaços restantes. Se não for definido o _fillchar_, preenche com espaços.
 ```python
 >>> 'lorem IPSUM DoLoR'.center(21, '.')
@@ -171,7 +171,7 @@ Retorna uma string com o tamanho definido em _width_ e preenche com o caracter _
 '      lorem IPSUM DoLoR       '
 ```
 
-### <span name="count"></a>str.count(sub[, start[,end]]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.count)
+### <a name="count"></a>str.count(sub[, start[,end]]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.count)
 Conta a quantidade de vezes que _sub_ aparece na str.
 ```python
 >>> 'lorem IPSUM DoLoR'.count('o')
@@ -180,14 +180,14 @@ Conta a quantidade de vezes que _sub_ aparece na str.
 0
 ```
 
-### <span name="encode"></a>str.encode(encoding='utf-8', errors='strict') [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.encode)
+### <a name="encode"></a>str.encode(encoding='utf-8', errors='strict') [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.encode)
 Codifica a string para um charset.
 ```python
 >>> 'lorem IPSUM DoLoR'.encode()	
 b'lorem IPSUM DoLoR'
 ```
 
-### <span name="endswith"></a>str.endswith(suffix[, start[, end]]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.endswith)
+### <a name="endswith"></a>str.endswith(suffix[, start[, end]]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.endswith)
 Verifica se a string termina com o _suffix_.
 ```python
 >>> 'lorem IPSUM DoLoR'.endswith('rt')
@@ -196,7 +196,7 @@ False
 True
 ```
 
-### <span name="startswith"></a>str.startswith(prefix[, start[, end]]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.startswith)
+### <a name="startswith"></a>str.startswith(prefix[, start[, end]]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.startswith)
 Verifica se a string começa com o _prefix_.
 ```python
 >>> 'lorem IPSUM DoLoR'.startswith('lo')
@@ -205,14 +205,14 @@ True
 False
 ```
 
-### <span name="expandtabs"></a>str.expandtabs(tabsize=8) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.expandtabs)
+### <a name="expandtabs"></a>str.expandtabs(tabsize=8) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.expandtabs)
 Converte tabs para espaços(padrão 8).
 ```python
 >>> 'lorem IPSUM DoLoR'.expandtabs()
 'lorem IPSUM DoLoR'
 ```
 
-### <span name="find"></a>str.find(sub[, start[, end]]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.find)
+### <a name="find"></a>str.find(sub[, start[, end]]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.find)
 Busca _sub_ na string e retorna o índice da primeira encontrada, retorna -1 se não encontrar nada. Atenção: método case sensitive.
 ```python
 >>> 'lorem IPSUM DoLoR'.find('m')	
@@ -221,7 +221,7 @@ Busca _sub_ na string e retorna o índice da primeira encontrada, retorna -1 se 
 -1
 ```
 
-### <span name="rfind"></a>str.rfind(sub[, start[, end]]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.rfind)
+### <a name="rfind"></a>str.rfind(sub[, start[, end]]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.rfind)
 Busca _sub_ na string e retorna o índice da primeira encontrada começando pela direita.<br>
 Retorna -1 se não encontrar nada.
 ```python
@@ -231,7 +231,7 @@ Retorna -1 se não encontrar nada.
 13
 ```
 
-### <span name="rindex"></a>str.rindex(sub[, start[, end]]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.rindex)
+### <a name="rindex"></a>str.rindex(sub[, start[, end]]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.rindex)
 Igual o rfind, só que retorna uma exceção ValueError se não encontrar nada.
 ```python
 >>> 'lorem IPSUM DoLoR'.rindex('o')	
@@ -240,14 +240,14 @@ Igual o rfind, só que retorna uma exceção ValueError se não encontrar nada.
 13
 ```
 
-### <span name="format"></a>str.format(*args, **kwargs) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.format)
+### <a name="format"></a>str.format(*args, **kwargs) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.format)
 Formata a string substituindo os coringas {} pelos _args_.
 ```python
 >>> "A {} de 1 + 2 é {}".format('soma', 1+2)	
 'A soma de 1 + 2 é 3'
 ```
 
-### <span name="format_map"></a>str.format_map(mapping) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.format_map)
+### <a name="format_map"></a>str.format_map(mapping) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.format_map)
 Parecido com o str.format(), exceto que mapping é usado diretamente e não copiado de um dict.
 ```python
 >>> class Default(dict):
@@ -258,7 +258,7 @@ Parecido com o str.format(), exceto que mapping é usado diretamente e não copi
 'Guido was born in country'
 ```
 
-### <span name="index"></a>str.index(sub[, start[, end]]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.index)
+### <a name="index"></a>str.index(sub[, start[, end]]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.index)
 Parecido com a str.find(), exceto que se não encontrar dispara uma exceção ValueError
 ```python
 >>> 'lorem IPSUM DoLoR'.index('Do')	
@@ -270,7 +270,7 @@ Traceback (most recent call last):
 ValueError: substring not found
 ```
 
-### <span name="isalnum"></a>str.isalnum() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isalnum)
+### <a name="isalnum"></a>str.isalnum() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isalnum)
 Retorna True se a string for totalmente alfanumérica.
 ```python
 >>> 'lorem IPSUM DoLoR'.isalnum()
@@ -279,7 +279,7 @@ False
 True
 ```
 
-### <span name="isalpha"></a>str.isalpha() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isalpha)
+### <a name="isalpha"></a>str.isalpha() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isalpha)
 Retorna True se a string for totalmente alfabética.
 ```python
 >>> 'lorem IPSUM DoLoR'.isalpha()
@@ -288,7 +288,7 @@ False
 True
 ```
 
-### <span name="isdecimal"></a>str.isdecimal() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isdecimal)
+### <a name="isdecimal"></a>str.isdecimal() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isdecimal)
 Retorna True se a string for totalmente decimal.
 ```python
 >>> 'lorem IPSUM DoLoR'.isdecimal()
@@ -297,7 +297,7 @@ False
 True
 ```
 
-### <span name="isdigit"></a>str.isdigit() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isdigit)
+### <a name="isdigit"></a>str.isdigit() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isdigit)
 Retorna True se a string for totalmente dígito.
 ```python
 >>> 'lorem IPSUM DoLoR'.isdigit()
@@ -306,14 +306,14 @@ False
 True
 ```
 
-### <span name="isidentifier"></a>str.isidentifier() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isidentifier)
+### <a name="isidentifier"></a>str.isidentifier() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isidentifier)
 Retorna True se a string for um identificador válido.
 ```python
 >>> 'lorem IPSUM DoLoR'.isidentifier()
 False
 ```
 
-### <span name="islower"></a>str.islower() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.islower)
+### <a name="islower"></a>str.islower() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.islower)
 Retorna True se a string for totalmente minúscula.
 ```python
 >>> 'lorem IPSUM DoLoR'.islower()
@@ -322,7 +322,7 @@ False
 True
 ```
 
-### <span name="isupper"></a>str.isupper() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isupper)
+### <a name="isupper"></a>str.isupper() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isupper)
 Retorna True se a string for totalmente maiúscula.
 ```python
 >>> 'lorem IPSUM DoLoR'.isupper()
@@ -331,7 +331,7 @@ False
 True
 ```
 
-### <span name="isnumeric"></a>str.isnumeric() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isnumeric)
+### <a name="isnumeric"></a>str.isnumeric() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isnumeric)
 Retorna True se a string for totalmente numérica.
 ```python
 >>> 'lorem IPSUM DoLoR'.isnumeric()
@@ -342,7 +342,7 @@ False
 True
 ```
 
-### <span name="isprintable"></a>str.isprintable() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isprintable)
+### <a name="isprintable"></a>str.isprintable() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isprintable)
 Retorna True se todos os caracteres da string forem imprimíveis ou ela for vazia.
 ```python
 >>> 'lorem IPSUM DoLoR'.isprintable()
@@ -355,7 +355,7 @@ False
 True
 ```
 
-### <span name="isspace"></a>str.isspace() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.isspace)
+### <a name="isspace"></a>str.isspace() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.isspace)
 Retorna True se todos os caracteres forem espaços.
 ```python
 >>> 'lorem IPSUM DoLoR'.isspace()
@@ -369,7 +369,7 @@ True
 True
 ```
 
-### <span name="istitle"></a>str.istitle() [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.istitle)
+### <a name="istitle"></a>str.istitle() [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.istitle)
 Retorna True se a string for um título(palavras iniciadas com maiúsculas e o resto minúsculas).
 ```python
 >>> 'lorem IPSUM DoLoR'.istitle()
@@ -378,7 +378,7 @@ False
 True
 ```
 
-### <span name="join"></a>str.join(iterable) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.join)
+### <a name="join"></a>str.join(iterable) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.join)
 Retorna uma string com os items do _iterable_ concatenados. O str neste caso serve como separador.
 ```python
 >>> ', '.join(['Banana', 'Laranja', 'Uva'])
@@ -387,7 +387,7 @@ Retorna uma string com os items do _iterable_ concatenados. O str neste caso ser
 'a~b~c~1~2~3~x~y~z'
 ```
 
-### <span name="ljust"></a>str.ljust(width[, fillchar]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.ljust)
+### <a name="ljust"></a>str.ljust(width[, fillchar]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.ljust)
 Retorna uma string alinhada a esquerda aumentada para o _width_. Caso seja oferecido o _fillchar_ preenche com ele, senão preenche com espaço.
 ```python
 >>> 'lorem IPSUM DoLoR'.ljust(30)
@@ -396,7 +396,7 @@ Retorna uma string alinhada a esquerda aumentada para o _width_. Caso seja ofere
 'lorem IPSUM DoLoR.................................'
 ```
 
-### <span name="rjust"></a>str.rjust(width[, fillchar]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.rjust)
+### <a name="rjust"></a>str.rjust(width[, fillchar]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.rjust)
 Retorna uma string alinhada a direita aumentada para o _width_. Caso seja oferecido o _fillchar_ preenche com ele, senão preenche com espaço.
 ```python
 >>> 'lorem IPSUM DoLoR'.rjust(30)
@@ -405,7 +405,7 @@ Retorna uma string alinhada a direita aumentada para o _width_. Caso seja oferec
 '.................................lorem IPSUM DoLoR'
 ```
 
-### <span name="rpartition"></a>str.rpartition(sep) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.rpartition)
+### <a name="rpartition"></a>str.rpartition(sep) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.rpartition)
 Divide a string através do separador, e retorna uma tupla contendo: a parte antes do separador, o separador e a parte depois do separador.
 ```python
 >>> 'lorem IPSUM DoLoR'.rpartition('IPSUM')
@@ -414,7 +414,7 @@ Divide a string através do separador, e retorna uma tupla contendo: a parte ant
 ('Roberto', ' & ', 'Sabrina')
 ```
 
-### <span name="split"></a>str.split(sep=None, maxsplit=-1) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.split)
+### <a name="split"></a>str.split(sep=None, maxsplit=-1) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.split)
 Divide a string através do separador, partindo da esquerda pra direita.
 Se o _maxsplit_ for provido, divide até encontra o máximo de separadores.
 ```python
@@ -424,7 +424,7 @@ Se o _maxsplit_ for provido, divide até encontra o máximo de separadores.
 ['lorem', 'IPSUM DoLoR']
 ```
 
-### <span name="rsplit"></a>str.rsplit(sep=None, maxsplit=-1) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.rsplit)
+### <a name="rsplit"></a>str.rsplit(sep=None, maxsplit=-1) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.rsplit)
 Divide a string através do separador, partindo da direita pra esquerda.
 Se o _maxsplit_ for provido, divide até encontra o máximo de separadores.
 ```python
@@ -434,7 +434,7 @@ Se o _maxsplit_ for provido, divide até encontra o máximo de separadores.
 ['lorem IPSUM', 'DoLoR']
 ```
 
-### <span name="strip"></a>str.strip([chars]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.strip)
+### <a name="strip"></a>str.strip([chars]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.strip)
 Retorna uma cópia da string com os _chars_ removidos.<br>
 Remove espaços se não for provido _chars_.<br>
 Atenção: a string deve na notação de objeto bytes.
@@ -445,7 +445,7 @@ b'spacious'
 b'example'
 ```
 
-### <span name="lstrip"></a>str.lstrip([chars]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.lstrip)
+### <a name="lstrip"></a>str.lstrip([chars]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.lstrip)
 Retorna uma cópia da string com os _chars_ removidos a esquerda.<br>
 Remove espaços se não for provido _chars_.<br>
 ```python
@@ -455,7 +455,7 @@ Remove espaços se não for provido _chars_.<br>
 'example.com'
 ```
 
-### <span name="rstrip"></a>str.rstrip([chars]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.rstrip)
+### <a name="rstrip"></a>str.rstrip([chars]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.rstrip)
 Retorna uma cópia da string com os _chars_ removidos a direita.<br>
 Remove espaços se não for provido _chars_.<br>
 ```python
@@ -465,7 +465,7 @@ Remove espaços se não for provido _chars_.<br>
 'mississ'
 ```
 
-### <span name="replace"></a>str.replace(old, new[, count]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.replace)
+### <a name="replace"></a>str.replace(old, new[, count]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.replace)
 Substitui o _old_ por _new_ na string.<br>
 Retorna uma cópia da string.<br>
 Se o _count_ for provido, substitui somente esta quantidade.
@@ -478,7 +478,7 @@ Se o _count_ for provido, substitui somente esta quantidade.
 'lxrem IPSUM DoLoR'
 ```
 
-### <span name="zfill"></a>str.zfill(width) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.zfill)
+### <a name="zfill"></a>str.zfill(width) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.zfill)
 Retorna uma string com o tamanho _width_ completando com zeros a esquerda.
 ```python
 >>> '1'.zfill(2)
@@ -487,7 +487,7 @@ Retorna uma string com o tamanho _width_ completando com zeros a esquerda.
 '00045'
 ```
 
-### <span name="splitlines"></a>str.splitlines([keepends]) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.splitlines)
+### <a name="splitlines"></a>str.splitlines([keepends]) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.splitlines)
 Retorna uma lista com as linhas quebradas na string.<br>
 As quebras de linha não aparecem no resultado, exceto se _keepends_ for True.
 ```python
@@ -497,7 +497,7 @@ As quebras de linha não aparecem no resultado, exceto se _keepends_ for True.
 ['ab c\n', '\n', 'de fg\r', 'kl\r\n']
 ```
 
-### <span name="maketrans"></a>str.maketrans(from, to) [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.maketrans)
+### <a name="maketrans"></a>str.maketrans(from, to) [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.maketrans)
 Cria uma tabela de tradução pra ser usada no método _str.translate()_.<br>
 A tabela deve ser de igual tamanho no _from_ e _to_. 
 ```python
@@ -506,7 +506,7 @@ A tabela deve ser de igual tamanho no _from_ e _to_.
 
 ```
 
-### <span name="translate"></a>str.translate(table, delete=b'') [:green_book:](https://docs.python.org/3/library/stdtypes.html#str.translate)
+### <a name="translate"></a>str.translate(table, delete=b'') [:green_book: docs](https://docs.python.org/3/library/stdtypes.html#str.translate)
 Retorna uma string traduzida com uma _table_ que é criada com _str.maketrans()_.<br>
 Em caso de provido _delete_, deleta os bytes da lista na string.
 ```python
