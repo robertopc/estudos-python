@@ -70,7 +70,8 @@ Para concatenar strings usamos o operador ```+``` e para repetição o ```*```.
 >>> str1 * 3
 'abcabcabc'
 ```
-
+a
+  
 ## String Methods
 
 A string por ser um objeto, possui alguns métodos embutidos. 

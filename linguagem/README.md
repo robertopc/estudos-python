@@ -1,4 +1,4 @@
 1. Variáveis
-  1. [Strings](variaveis/strings.md)
-  1. [Números](variaveis/numeros.md)
-  1. [Booleanos](variaveis/booleans.md)
+    - [Strings](variaveis/strings.md)
+    - [Números](variaveis/numeros.md)
+    - [Booleans](variaveis/booleans.md)
