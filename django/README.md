@@ -12,8 +12,20 @@ Este é um pequeno resumo dos meus estudos em Django.
     - [settings.py](#settingspy)
     - [urls.py](#urlspy)
     - [wsgi.py](#wsgipy)
-- [Criando aplicações](#criar-aplicacao)
-- [Servidor desenvolvimento](#servidor-dev)
+- [Criando Aplicações](#criar-aplicacao)
+    - [Estrutura da Aplicação](#estrutura-aplicacao)
+        - [\_\_init\_\_.py](#init-app)
+        - [admin.py ](#admin-app) 
+        - [apps.py ](#apps-app) 
+        - [migrations/](#migrations-app)
+        - [models.py](#models-app)  
+        - [tests.py](#tests-app)  
+        - [views.py](#views-app)
+        
+    - [MVC para MTV](#mvc-mtv)
+- [Servidor de desenvolvimento](#servidor-dev)
+- [Criando um Hello World](#hello-world)
+    - [Criando Hello World com templates](#hello-world-template)
 - []()
 
 ## <a name="iniciando"></a>Iniciando
@@ -48,7 +60,7 @@ Podemos criar sem o ponto, porém criará um diretório 'nomedoprojeto' e dentro
 
 Ao criar o projeto, o Django possui a seguinte estrutura.
 
-```sh
+```
 __init__.py
 settings.py
 urls.py
@@ -56,7 +68,7 @@ wsgi.p
 ```
 
 ### <a name="initpy"></a>__init__.py
-Arquivo vazio para indicar pro Python que é um módulo.
+Arquivo vazio para indicar ao Python que é um módulo.
 
 ### <a name="settingspy"></a>settings.py
 Este é o arquivo principal do projeto, nele contém todas as configurações do projeto.
@@ -67,11 +79,16 @@ DEBUG = True # Alterar para False em produção
 
 LANGUAGE_CODE = 'en-us' # mudar para pt-br
 
-TIME_ZONE = 'America/Sao_Paulo' # muda o timezone
+TIME_ZONE = 'UTC' # mudar para America/Sao_Paulo
+
+INSTALLED_APPS = [
+... # lista com as aplicações instaladas
+'nomedoprojeto.nomedaaplicacao', # adicionar as aplicações criadas dessa maneira
+]
 ```
 ### <a name="urlspy"></a> urls.py
 
-Este arquivo contém as rotas pra nossas aplicações, ou seja, as urls que direcionam.
+Este arquivo contém as rotas pra nossas aplicações, ou seja, as urls que direcionam para as Views.
 
 ### <a name="wsgipy"></a> wsgi.py
 
@@ -88,10 +105,67 @@ Para criarmos as aplicações, utilizamos o código a seguir.
 python manage.py startapp nomedaaplicacao
 ```
 
-> Nota: como aplicação principal, é uma convenção usar o nome 'core'
+Depois de criada, devemos inserir a aplicação no `INSTALLED_APPS`.
+
+> Nota 1: Como aplicação principal, é uma convenção usar o nome `core`.
+
+> Nota 2: Não pode nomear a aplicação com palavras reservadas do Django, por exemplo `site`.
+
+### <a name="estrutura-aplicacao"></a>Estrutura da Aplicação
+
+Ao criarmos a aplicação, é gerada a estrutura padrão a seguir.
+
+```
+__init__.py  
+admin.py  
+apps.py  
+migrations/
+    __init__.py
+models.py  
+tests.py  
+views.py
+```
+
+#### <a name="init-app"></a>\_\_init\_\_.py
+
+O mesmo que o \_\_ini\_\_.py do Projeto[¹](#initpy).
+
+#### <a name="admin-app"></a>admin.py
+
+Este arquivo contém os modelos para o backend desta aplicação.
+
+#### <a name="apps-app"></a>apps.py
+
+Este arquivo descreve configurações da aplicação.
+
+#### <a name="migrations-app"></a>migrations/
+
+Diretório contendo as migrações para o banco de dados, ou seja, um versionamento do banco de dados feito pelo ORM.
+
+#### <a name="models-app"></a>models.py
+
+Este arquivo contém os modelos de dados da aplicação. As classes deste arquivo são usadas pelo ORM para criar a estruturas de dados do banco de dados.
+
+#### <a name="tests-app"></a>tests.py
+
+Este é o arquivo onde devem ser escritos os testes da aplicação.
+
+#### <a name="views-app"></a>views.py
+
+Este é o arquivo controlador da aplicação, ele faz a interface entre os modelos e os templates.
+
+### <a name="mvc-mtv"></a>Padrão MVC para MTV
+
+O Django utiliza o padrão de projeto MTV(Model, Template, View). Possui o mesmo conceito que o MVC, porém o `Template = View` e `View = Control`.
+
+MVC     | MTV
+---     | ---
+Model   | Model
+View    | Template
+Control | View
 
 ## <a name="servidor-dev"></a>Servidor de desenvolvimento
-Para desenvolvermos subimos um servidor local de desenvolvimento no terminal.
+Para desenvolvermos subimos um servidor local de desenvolvimento pelo terminal.
 Através do comando a seguir.
 ```
 python manage.py runserver
@@ -99,3 +173,27 @@ python manage.py runserver
 
 Este comando gerará uma url para visualizarmos no navegador, geralmente com o endereço `http://127.0.0.1:8000` ou `http://localhost:8000`.
 
+## <a name="hello-world"></a> Criando um Hello World
+
+Para criar uma aplicação de Hello World no Django, primeiro utilizaremos o comando de criação de aplicação.
+```
+python manage.py startapp core
+```
+
+Em seguida inseriremos o seguinte código no `views.py`.
+
+```python
+from django.shortcuts import render
+from django.http import HttpResponse
+
+
+def home(request): # views sempre devem receber o parametro 'request'
+    return HttpResponse('<h1>Hello World!</h1>')
+
+```
+
+Neste exemplo passamos a mensagem de forma bruta para o servidor, não utilizamos templates(o que não é a maneira mais correta).
+
+### <a name="hello-world-template"></a> Criando Hello World com templates
+
+## <a name="slug"></a> Em breve..

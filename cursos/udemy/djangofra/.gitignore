@@ -2,3 +2,4 @@ lib/
 bin/
 include/
 share/
+pip-selfcheck.json
