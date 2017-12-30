@@ -16,6 +16,9 @@ Este repositório contem resumos e materiais dos meus estudos.
     * [Machine Learning e Data Science com Python](https://www.udemy.com/machine-learning-e-data-science-com-python/learn/v4/)
     * [Curso de Pygame ](https://www.udemy.com/curso-de-pygame-python/learn/v4/)
 
+## Artigos
+* [Deploy for kids – Django & Python 3](https://fernandofreitasalves.com/guia-para-deploy-django-python/)
+
 ## Youtube
 * [Curso em Vídeo](https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ)
 
