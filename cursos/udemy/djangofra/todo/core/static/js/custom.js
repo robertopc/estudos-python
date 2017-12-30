@@ -1,4 +1,4 @@
-function horaAgora() {
+function data() {
 
     var horas = new Date().getHours();
     var minutos = new Date().getMinutes();
@@ -9,5 +9,5 @@ function horaAgora() {
 
 setInterval(function() {
 
-    horaAgora();
+    data();
 }, 1000);
