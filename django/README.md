@@ -186,7 +186,6 @@ Em seguida inseriremos o seguinte código no `views.py`.
 from django.shortcuts import render
 from django.http import HttpResponse
 
-
 def home(request): # views sempre devem receber o parametro 'request'
     return HttpResponse('<h1>Hello World!</h1>')
 
@@ -278,7 +277,7 @@ setInterval(function() {
 Com estes arquivos somos capazes de criar a estrutura de templates do Django. Agora vamos editar o `base.html` para ele ler os arquivos estáticos.
 O código a seguir é o arquivo editado com as `template tags` do Django.
 
-```python
+```html
 {% load staticfiles %}
 <!doctype html>
 <html>
@@ -303,7 +302,6 @@ Pra finalizar modificaremos a `views.py` da aplicação com o código.
 
 ```python
 from django.shortcuts import render
-
 
 def home(request):
     return render(request, 'base.html')
